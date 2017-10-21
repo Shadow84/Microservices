@@ -1,0 +1,28 @@
+server:
+  port: 8700
+management:
+  port: 9700
+  security:
+    enabled: false
+
+eureka:
+  client:
+    registerWithEureka: false
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    clients:
+      path: /client/**
+      serviceId: ClientService
+      stripPrefix: true
+    accounts:
+      path: /account/**
+      serviceId: AccountService
+      stripPrefix: true
+    card-processing:
+      path: /processing/**
+      serviceId: ProcessingService
+      stripPrefix: true
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 30000

@@ -1,0 +1,6 @@
+server:
+  port: 8803
+management:
+  port: 9803
+  security:
+    enabled: false

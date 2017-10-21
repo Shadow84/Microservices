@@ -1,0 +1,9 @@
+spring.datasource:
+  url: jdbc:h2:file:~/ProcessingService;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
+
+server:
+  port: 8804
+management:
+  port: 9804
+  security:
+    enabled: false
