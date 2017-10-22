@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Publisher
+
+server:
+  port: 8001
+
+spring.cloud.stream.bindings.words:
+  destination: wordNumSplit
+  producer:
+    partitionKeyExpression: payload
+    partitionCount: 2

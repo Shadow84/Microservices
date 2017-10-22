@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Zuul
+
+spring.cloud.config.uri: http://localhost:8600
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 30000

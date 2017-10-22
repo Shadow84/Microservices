@@ -3,3 +3,7 @@ spring.datasource:
 
 server:
   port: 8802
+management:
+  port: 9802
+  security:
+    enabled: false

@@ -1,0 +1,6 @@
+server:
+  port: 8006
+
+spring.cloud.stream.bindings.input:
+  consumer:
+    instanceIndex: 1
